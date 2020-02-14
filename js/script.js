@@ -10,3 +10,7 @@ let topPosition = 0;
 let leftPosition = 0;
 let pushToBottom = -2;//vitesse de déplacement vers le bas
 let pushToRight = -2;//vitesse de déplacement vers la droite
+
+function animate(){
+    
+}
