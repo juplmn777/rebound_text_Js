@@ -12,5 +12,14 @@ let pushToBottom = -2;//vitesse de déplacement vers le bas
 let pushToRight = -2;//vitesse de déplacement vers la droite
 
 function animate(){
-    
+    topPosition === 0 ? pushToBottom *= -1 : null;
+    topPosition === (maxHeight - title.offsetHeight) ? pushToBottom *= -1 : null;
+
+    topPosition += pushToBottom;
+
+    title.style.top = topPosition + "px";
+
+    requestAnimationFrame(animate);
 }
+
+requestAnimationFrame(animate);
